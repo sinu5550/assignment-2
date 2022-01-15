@@ -454,21 +454,143 @@ label{
     width: 70%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 .footer{
     display: block;
     padding-top: 10px;
 }
+
+
+}
+
+/* ======================================================= Tablet view ================================================================ */
+
+@media only screen and (min-width: 576px) and (max-width: 992px){
+ body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: visible;
+        flex-wrap: wrap;
+    }    
+    hr{
+        display: none;
+    }
+ .menu{
+        display: none;
+    }
+    .nav-width{
+        width: 100%;
+    }
+    .nav-bar{
+        display: inline;
+    }
+    .nav-bar .logo h2{
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 40px;
+        margin-top: 30px;
+    
+    }
+    
+    .main-camera{
+        display: none;
+    }
+    .cam-circle{
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .sec1{
+        width: 90%;
+        margin-bottom: 60px;
+    }
+    .sec1 h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .sec1 p{
+        font-size: 14px;
+    }
+    .flexible-container{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .button{
+        width: 150px;
+    }
+    .shops{
+        width: 100%;
+        display: flex;
+        column-gap: 30px;
+        justify-items:center;
+        
+    } 
+    .shops img{
+        width: 50px;
+    }
+    
+    .sec2{
+        width: 100%;
+        margin-bottom: 15px;
+        margin-top: 40px;
+    }
+    .sec2-width{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sec2-grid{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 10px;
+       
+    
+    }
+    .product-details{
+        width: 90%;
+    }
+    .product-details img{
+        width: 100%;
+    }
+    .sec3{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sec3-grid{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .sec3-img img{
+        width: 100%;
+    }
+    .contact-container{
+        width: 100%;
+        
+    }
+    .contact-details{
+        margin-right: 0px;
+        width: 70%;
+    }
+    .footer{
+        display: block;
+        padding-top: 15px;
+    }
+
+
+
+
+
+
+
+
 
 
 }
