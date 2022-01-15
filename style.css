@@ -36,7 +36,6 @@ body{
 }
 .nav-bar a{
     text-decoration: none;
-    margin-right: 20px;
     color: var(--text-black);
     font-size: 16px;
     font-weight: 500;
@@ -47,6 +46,7 @@ body{
 .menu{
     display:flex ;
     align-items: center;
+    column-gap: 20px;
 }
 /* ================================== first section======================================= */
 .sec1{
@@ -323,15 +323,10 @@ label{
 /* -------------------------------------------------- for mobile --------------------------------------------------------------------------- */
 
 @media only screen and (max-width:576px){
-    header{
+ hr{
         display: none;
     }
-    hr{
-        display: none;
-    }
-    .shops{
-        display: none;
-    }
+    
     .main-camera{
         display: none;
     }
@@ -346,17 +341,43 @@ label{
         padding: 0;
         box-sizing: border-box;
         overflow-x: visible;
+        flex-wrap: wrap;
     }
 
 .menu{
     display: none;
 }
+.nav-width{
+    width: 100%;
+}
+.nav-bar{
+    display: inline;
+}
+.nav-bar .logo h2{
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+
+}
 .sec1{
     width: 100%;
+    margin-bottom: 50px;
+}
+.sec1 h1 {
+    font-size: 28px;
+    line-height: 40px;
+}
+.sec1 p{
+    font-size: 14px;
 }
 .flexible-container{
     display: grid;
     grid-template-columns: repeat(1,1fr);
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     
     /* display: flex;
     flex-direction: column;
@@ -364,25 +385,73 @@ label{
     align-items: center; */
 }
 
-.flexible-container img{
- 
-}
 .btn{
     display: flex;
     justify-content: center;
+    font-size: 16px;
 }
 .flexible-container .article{
     text-align: center;
 }
 .button{
-    width: 55%;
+    width: 150px;
+}
+.shops{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 0px;
+    justify-items:center;
+    
+}
+.shops img{
+    width: 33.38px;
 }
 .sec2{
-    display: none;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.sec2-width{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sec2-grid{
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    column-gap: 0;
 
 }
+.product-details{
+    width: 90%;
+}
+.product-details img{
+    width: 100%;
+}
 .sec3{
-    display: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sec3-grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.sec3-img img{
+    width: 70%;
+}
+.contact-container{
+    width: 100%;
+    
+}
+.contact-details{
+    margin-right: 0px;
+    width: 70%;
 }
 
 
@@ -397,7 +466,8 @@ label{
 
 
 .footer{
-    display: none;
+    display: block;
+    padding-top: 10px;
 }
 
 
