@@ -7,7 +7,7 @@
     --text-black: #3A3A3A;
     --text-gray: #787885;
     --orange: #FB8200;
-    --footer:#03203C;
+    --footer:#0A0826;
 }
 /* ==========================================styles==================================================== */
 body{
@@ -257,7 +257,54 @@ label{
 }
 /* ===========================================================footer=================================================================== */
 
-footer{
+.footer{
  background-color: var(--footer);
+ margin-top: 40px;
+ height: 200px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ 
+ 
+
+}
+.footer-details{
+    color: white;
+    text-align: center;
+    row-gap: -20px;
+    line-height: 5px;
+    padding-top: 15px;
+}
+.footer-details p{
+    font-family:'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+
+}
+.footer-details h2{
+    margin-bottom: 30px;
+}
+/* =====================================social icons style================ */
+.social-icons a{
+    background-color: #1d1a4e;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 6px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: white; 
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+}
+.social-icons a:hover {
+    background-color: #5d5d7e;
+    transition: all ease 0.3s;
 }
 
